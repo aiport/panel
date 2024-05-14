@@ -1,0 +1,66 @@
+/* #terminal textarea{
+    display: none !important;
+} */
+.terminal{
+    background: #000000a9;
+    backdrop-filter: blur(18px);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    height: 90vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 900px;
+}
+.xterm-screen{
+    background-color: transparent !important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.buttons{
+    display: flex;
+    margin-top: 20px !important;
+}
+
+.red{
+    background: red;
+    color: #fff;
+    border: 2px solid red;
+}
+.button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: auto;
+    color: #fff;
+}
+.button:focus{   
+    background: transparent;
+}
+.green{
+    background: green;
+    color: #fff;
+    border: 2px solid green;
+}
+.blue{
+    background: blue;
+    color: #fff;
+    border: 2px solid blue;
+}
+.terminalTextbox{
+    width: 95%;
+    height: 40px;
+    margin: 0px 20px;
+    margin-left: 35px !important;
+    border-radius: 20px;
+    outline: none;
+    background: #000000a9;
+    backdrop-filter: blur(18px);
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 10px;
+    color: #fff;
+}

@@ -1,8 +1,11 @@
 import React,{useState, useEffect} from 'react'
 import '../assets/css/login.css'
+import { useNavigate } from 'react-router-dom';
+
 const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate();
   async function submit(e){
     document.getElementById('login').classList.add('disabled')
     try{
@@ -17,7 +20,7 @@ const Login = () => {
     ).then(res => res.json()).then(data => {
       if(data.success){
         document.cookie = `token=${data.token}`
-        window.location.href = '/'
+        navigate('/')
       }else{
         document.getElementById('error').innerHTML = data.error
         document.getElementById('login').classList.remove('disabled')
@@ -31,7 +34,8 @@ const Login = () => {
 }
   return (
    <>
-    <div className='loginBox'>
+   <div className="loginBody">
+   <div className='loginBox'>
       <div className="error" id='error'>
       </div>
             <div className="logo">
@@ -50,6 +54,7 @@ const Login = () => {
             </button>
 
     </div>
+   </div>
     </>
   )
 }
