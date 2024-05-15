@@ -11,13 +11,10 @@
     height: 90vh;
     margin-left: 20px;
     margin-top: 20px;
-    width: 900px;
+    width: 850px;
 }
 .xterm-screen{
     background-color: transparent !important;
-}
-::-webkit-scrollbar {
-    width: 0px;
 }
 .buttons{
     display: flex;
@@ -63,4 +60,40 @@
     border: 2px solid rgba(255,255,255,0.1);
     padding: 10px;
     color: #fff;
+    transition: 1s;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.panelList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.363);
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.txt{
+    margin-right:2px ;
+    width: 95%;
+}
+.panelList .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background: red;
+    backdrop-filter: blur(18px);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    left: 0;
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+.panelList .icon:hover{
+    cursor: pointer;
+    color: green;
 }

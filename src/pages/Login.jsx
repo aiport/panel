@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 import '../assets/css/login.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ const Login = () => {
     }
     ).then(res => res.json()).then(data => {
       if(data.success){
-        document.cookie = `token=${data.token}`
+        document.cookie = `token=${data.loginToken}`
         navigate('/')
       }else{
         document.getElementById('error').innerHTML = data.error

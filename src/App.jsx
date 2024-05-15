@@ -3,6 +3,7 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Navbar from './pages/Navbar'
 import MyTerminal from './pages/Terminal'
+import ServerNavbar from './pages/ServerNavbar'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 export default function App() {
   const path = window.location.pathname;
@@ -21,6 +22,12 @@ export default function App() {
       <Navbar/><MyTerminal/>
     </div> </>,
     },
+    {
+      path:'/server/:id/console',
+      element:<><div style={{ display: 'flex', width:'100%'}}>
+      <ServerNavbar/><MyTerminal/>
+    </div> </>,
+    }
   ]);
   return (
     <>

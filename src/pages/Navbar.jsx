@@ -29,7 +29,7 @@ export default function Navbar() {
             <div className="text">Servers</div>
           </li>
           </NavLink>
-          {Cookies.get('token') == "admin" ? <AdminNavbar /> : null}
+          {Cookies.get('token')? <AdminNavbar /> : null}
         </ul>
       </nav>
     </div>

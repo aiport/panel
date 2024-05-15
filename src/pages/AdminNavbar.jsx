@@ -16,7 +16,7 @@ export default function AdminNavbar() {
           <NavLink to='/settings'  activeClassName="active">
           <li>
             <FontAwesomeIcon icon={faServer} className='icon' />
-            <div className="text">Servers</div>
+            <div className="text" style={{width:'95%'}}>Servers</div>
           </li>
           </NavLink>
     </>

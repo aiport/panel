@@ -3,7 +3,7 @@
     backdrop-filter: blur(18px);
     border: 2px solid rgba(255,255,255,0.1);
     color: #fff;
-    width: 200px;
+    width: 200px !important;
     height: 100vh;
 }
 .navLogo{
@@ -85,6 +85,18 @@
     align-items: center;
     justify-content: center;
     padding: 10px !important;
+}
+.list a li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    flex-direction: row; /* Add this line */
+}
+.text{
+    width: 95%;
 }
 /* .xterm-char-measure-element{
     display: none;
