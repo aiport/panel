@@ -5,6 +5,9 @@
     color: #fff;
     width: 200px !important;
     height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .navLogo{
     display: flex;
@@ -30,10 +33,11 @@
     padding: 10px 0;
     text-align: center;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     text-decoration: none;
     transition: 0.1s;
+    margin: 10px 0;
 }
 .list a li{
     text-decoration: none;
@@ -41,7 +45,7 @@
     font-size: 18px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .list a li .icon{
     width: 20px;
@@ -51,6 +55,8 @@
     backdrop-filter: blur(18px);
     padding: 10px;
     border-radius: 10px;
+    left: 0;
+    margin-left: 0%;
 }
 .list a:hover{
     cursor: pointer;
@@ -96,7 +102,7 @@
     flex-direction: row; /* Add this line */
 }
 .text{
-    width: 95%;
+    width: 100px !important;
 }
 /* .xterm-char-measure-element{
     display: none;

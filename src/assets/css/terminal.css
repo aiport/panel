@@ -1,6 +1,7 @@
 /* #terminal textarea{
     display: none !important;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 .terminal{
     background: #000000a9;
     backdrop-filter: blur(18px);
@@ -19,12 +20,14 @@
 .buttons{
     display: flex;
     margin-top: 20px !important;
+    align-items: center;
+    justify-content: center;
 }
 
 .red{
     background: red;
     color: #fff;
-    border: 2px solid red;
+    border: 2px dashed red;
 }
 .button{
     padding: 10px;
@@ -34,6 +37,10 @@
     transition: 0.5s;
     width: auto;
     color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
 }
 .button:focus{   
     background: transparent;
@@ -44,9 +51,9 @@
     border: 2px solid green;
 }
 .blue{
-    background: blue;
+    background: rgb(112, 206, 6);
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid rgb(112, 206, 6);
 }
 .terminalTextbox{
     width: 95%;
@@ -71,7 +78,7 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.363);
     margin: 10px;
-    padding: 5px;
+    padding: 20px 5px;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;

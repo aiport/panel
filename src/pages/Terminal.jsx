@@ -3,7 +3,7 @@ import { Terminal } from '@xterm/xterm'; // Assuming you're using @xterm/xterm
 import '../../node_modules/xterm/css/xterm.css';
 import '../assets/css/terminal.css';
 import { useParams } from 'react-router-dom';
-import { faWifi, faClock, faMicrochip, faHardDrive, faMemory } from '@fortawesome/free-solid-svg-icons';
+import { faWifi, faClock, faMicrochip, faHardDrive, faMemory, faCloudArrowUp, faCloudArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function MyTerminal() {
   const terminalRef = useRef(null);
@@ -111,6 +111,14 @@ export default function MyTerminal() {
           <div className="node panelList">
             <FontAwesomeIcon icon={faMemory} className='icon'/>
             <div className="txt">0 Bytes /1 Gib</div>
+          </div>
+          <div className="node panelList">
+            <FontAwesomeIcon icon={faCloudArrowDown} className='icon'/>
+            <div className="txt">0 Bytes</div>
+          </div>
+          <div className="node panelList">
+            <FontAwesomeIcon icon={faCloudArrowUp} className='icon'/>
+            <div className="txt">0 Bytes</div>
           </div>
         </div>
       </div>

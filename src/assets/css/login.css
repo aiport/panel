@@ -3,24 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
-}
+} */
 .loginBody{
-    background-image: url('../images/background.png');
+    /* background-image: url('https://cdn.discordapp.com/attachments/867824692907868160/1240013584931754014/c012103551cc1dc39c71.png?ex=6649a164&is=66484fe4&hm=73487a05883cc193c4f76697738e28f9ad3cd2b667240c635d1b55f4f6afed87&');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+body{
+    /* background-image: url('https://cdn.discordapp.com/attachments/867824692907868160/1240013584931754014/c012103551cc1dc39c71.png?ex=6649a164&is=66484fe4&hm=73487a05883cc193c4f76697738e28f9ad3cd2b667240c635d1b55f4f6afed87&');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: rgba(0, 0, 0, 0.938) !important;
 }
 .loginBox{
     background: #000000a9;
